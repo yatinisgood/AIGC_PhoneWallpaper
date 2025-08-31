@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的 AI 作品集</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        /* --- 暗色系樣式 --- */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #121212; /* 深黑色背景 */
+            color: #e0e0e0; /* 淺灰色文字 */
+        }
+
+        h1 {
+            color: #ffffff; /* 純白標題 */
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .grid {
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 這是包含圖片和提示詞的 "卡片" */
+        .grid-item {
+            width: 300px; /* 根據您的喜好調整欄寬 */
+            margin-bottom: 20px;
+            background-color: #1e1e1e; /* 比背景稍亮的卡片顏色 */
+            border-radius: 8px; /* 圓角 */
+            overflow: hidden; /* 確保圖片不會超出圓角範圍 */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4); /* 更深的陰影 */
+        }
+
+        .grid-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+            cursor: pointer; /* 讓滑鼠移到圖片上時顯示為可點擊的手形 */
+        }
+
+        /* --- 用來顯示提示詞的區塊 --- */
+        .prompt-container {
+            padding: 15px;
+            border-top: 1px solid #333; /* 在圖片和文字間加上一條細微的分隔線 */
+        }
+
+        .prompt-text {
+            font-size: 8px;      /* 較小的字體 */
+            color: #b0b0b0;      /* 中等亮度的灰色文字 */
+            line-height: 1.5;     /* 舒適的行高 */
+            margin: 0;            /* 移除段落的預設邊距 */
+            word-wrap: break-word; /* 確保長單字能自動換行 */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AIGC 手機桌布</h1>
+    
+    <!-- 瀑布流容器 -->
+    <div class="grid">
+        <!-- 圖片項目會由 JavaScript 動態加入這裡 -->
+    </div>
+
+    <!-- 引入函式庫 -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/exifreader@4.21.1/dist/exif-reader.js"></script>
+    <script src="main.js"></script> <!-- 您的主要 JavaScript 檔案 -->
+
+</body>
+</html>
